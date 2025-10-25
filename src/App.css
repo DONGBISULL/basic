@@ -1,0 +1,54 @@
+.orange {
+    color: orange;
+}
+
+.profile {
+    width: min(320px, 90vw);
+    margin: 2rem auto;
+    padding: 1.75rem;
+    border-radius: 24px;
+    background: linear-gradient(180deg, #ffffff 0%, #f4f6fb 100%);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.5;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /*width: 300px;*/
+    /*text-align: center;*/
+    /*padding: 1rem;*/
+    /*background-color: #ebebeb;*/
+    /*border-radius: 20px;*/
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+}
+
+.new {
+    position: absolute;
+    left: 65%;
+    top: 10%;
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #65b6f1 0%, #64ece5 100%);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: 0 6px 12px rgba(240, 101, 149, 0.25);
+}
