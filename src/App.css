@@ -108,3 +108,21 @@
     outline: 3px solid rgba(118, 75, 162, 0.4);
     outline-offset: 2px;
 }
+
+/* 고급 AppXY */
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: beige;
+}
+
+.pointer {
+    position: absolute;
+    background: #cc5a5a;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    left: -15px;
+    top: -15px;
+}
+
