@@ -1,22 +1,39 @@
 import './App.css';
 
+import {createBrowserRouter, RouterProvider, Outlet} from 'react-router-dom'
+import NotFound from "./pages/NotFound.jsx";
+import Home from "./pages/Home.jsx";
+import Videos from "./pages/Videos.jsx";
+import Root from "./pages/Root.jsx";
+
 function App() {
-    const name = '엘리';
-    const list = ['강아지', '고양이', '다람쥐', '돌고래']
-    return (
-        <>
-            <h1 className='orange'>1111</h1>
-            <h2>Hello!!</h2>
-            <p>{name}</p>
-            <ul>
-                {
-                    list.map((item, index) => (
-                        <li key={index}> {item}</li>
-                    ))
-                }
-            </ul>
-        </>
-    )
+    const router = createBrowserRouter([
+            {
+                id: "root",
+                path: "/",
+                element: (
+                    <>
+                        <Root/>
+                    </>
+                ),
+                errorElement: <NotFound/>,
+                children: [
+                    {
+                        index: true,
+                        element: <Home/>
+                    },
+                    {
+                        id: "videos",
+                        path: "/videos",
+                        errorElement: <NotFound/>,
+                        element: <Videos/>
+                    }
+                ]
+            },
+
+        ])
+    ;
+    return <RouterProvider router={router}/>
 }
 
 export default App

@@ -7,9 +7,12 @@ import AppProducts from "./basic/AppProducts.jsx";
 import AppXY from "./AppXY.jsx";
 import AppMentor from "./AppMentor.jsx";
 import AppMentors from "./AppMentors.jsx";
+import AppForm from "./AppForm.jsx";
+import AppTheme from "./AppTheme.jsx";
+import AppMentorsButton from "./AppMontorsButton.jsx";
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <AppMentors/>
+        <App/>
     </StrictMode>,
 )
