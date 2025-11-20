@@ -5,6 +5,7 @@ import NotFound from "./pages/NotFound.jsx";
 import Home from "./pages/Home.jsx";
 import Videos from "./pages/Videos.jsx";
 import Root from "./pages/Root.jsx";
+import VideoDetail from "./pages/VideoDetail.jsx";
 
 function App() {
     const router = createBrowserRouter([
@@ -27,6 +28,12 @@ function App() {
                         path: "/videos",
                         errorElement: <NotFound/>,
                         element: <Videos/>
+                    },
+                    {
+                        id: "video detail",
+                        path: "/videos/:videoId",
+                        errorElement: <NotFound/>,
+                        element: <VideoDetail/>
                     }
                 ]
             },
